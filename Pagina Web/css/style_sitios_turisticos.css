@@ -1,0 +1,672 @@
+/*general*/
+*{
+    margin: 0;
+}
+
+html {
+
+    scroll-behavior: smooth; 
+}
+
+body{
+    background-color: #d3d3d3;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+/*Menu de navegacion*/
+.contenedor_menu{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+}
+.navbar{
+    margin-top: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    background: #005f57;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+    margin: 0 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+    color: #83dbed;
+}
+
+/*menu traslado*/
+.contenedor_men {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu_traslado{
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    border-bottom: 2px solid rgb(63, 63, 63);
+    
+}
+
+.menu_traslado ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    
+}
+
+.menu_traslado ul li{
+    margin: 0 15px;
+    padding: 10px;
+    
+}
+
+.menu_traslado a{
+    text-decoration: none;
+    font-size: 1.017vw;
+    transition: color 0.3s;
+    padding: 21px;
+    color: #000;
+}
+
+.menu_traslado a:hover{
+    background-color: #90a398;
+}
+
+/*contenido*/
+main{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*seccion_01 vista general*/
+#vista_general{
+    width: 80%;
+    align-self: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 2px solid #949494;
+}
+
+#vista_general h1{
+    margin-top: 100px;
+    font-weight: 800;
+    font-size: 3vw;
+    margin-bottom: 50px;
+}
+
+#vista_general p{
+    font-size: 1vw;
+}
+
+#vista_general li{
+    font-size: 1vw;
+}
+
+.informacion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.collage{
+    display: grid;
+    grid-template-columns: repeat(5,19%);
+    grid-template-rows: repeat(3,28%);
+    width: 60%;
+    height: 39rem;
+    margin-bottom: 10px;
+    grid-gap: 10px;
+}
+
+.collage .img{
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.collage .img:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.img1{
+    grid-column:1/5; 
+    grid-row: 1/3;
+    overflow: hidden;
+    
+}
+
+.img1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.img2{
+    grid-column:5/6; 
+    grid-row: 1/2;
+    overflow: hidden;
+}
+
+.img2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.img3{
+    grid-column:5/6; 
+    grid-row: 2/3;
+    overflow: hidden;
+}
+
+.img3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.img4{
+    grid-column:1/2; 
+    grid-row: 3/4;
+    overflow: hidden;
+}
+
+.img4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.img5{
+    grid-column:2/3; 
+    grid-row: 3/4;
+    overflow: hidden;
+    
+}
+
+.img5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.img6{
+    grid-column:3/4; 
+    grid-row: 3/4;
+    overflow: hidden;
+}
+
+.img6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.img7{
+    grid-column:4/5; 
+    grid-row: 3/4;
+    overflow: hidden;
+   
+}
+
+
+.img7 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.img8{
+    grid-column:5/6; 
+    grid-row: 3/4;
+    overflow: hidden;
+    
+}
+
+.img8 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.mapa{
+    width: 37%;
+    height: 550px;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/*seccion_02 info y precios*/
+#info_precios{
+    margin-top: 100px;
+    align-self: center;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 2px solid #949494;
+}
+
+#info_precios h1{
+    margin-top: 70px;
+    font-size: 3vw;
+}
+
+.info {
+    background-color: #b5c3b5;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #005f40;
+    color: white;
+}
+
+.lugares{
+    width: auto;
+    margin-top: 50px;
+    font-size: 3vw;
+}
+.lugares_cercanos {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.lugar {
+    width: auto;
+    background-color: #b5c3b5;
+    border-radius: 15px;
+}
+.lugar h3{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8vw;
+    color: #005f40;
+}
+.lugar ul {
+    list-style: none;
+    padding: 0;
+}
+.lugar li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/*seccion_03 servicios*/
+
+#servicios{
+    margin-top: 100px;
+    align-self: center;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+    border-bottom: 2px solid #949494;
+}
+
+#servicios h1{
+    margin-top: 70px;
+    font-size: 3vw;
+}
+
+.servicios_completos {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.servicio {
+    width: 30%;
+    background-color: #b5c3b5;
+    border-radius: 15px;
+}
+.servicio h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1vw;
+    color: #005f40;
+}
+.servicio ul {
+    list-style: none;
+    padding: 0;
+}
+.servicio li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+/*seccion_04 Normas*/
+
+#normas{
+    width: 80%;
+    align-self: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 2px solid #949494;
+
+}
+
+#normas h1{
+    margin-top: 70px;
+    font-size: 3vw;
+}
+
+.normas_generales {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #b5c3b5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.normas_generales h2 {
+    text-align: center;
+    color: #000000;
+}
+.norma {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.norma:last-child {
+    border-bottom: none;
+}
+.norma h3 {
+    margin-bottom: 5px;
+    color: #02a676;
+}
+.norma p {
+    margin: 5px 0;
+    color: #000000;
+}
+/*seccion_05 A tener en cuenta*/
+
+#tener_en_cuenta{
+
+    width: 80%;
+    align-self: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#tener_en_cuenta h1{
+    margin-top: 70px;
+    font-size: 3vw;
+}
+/*footer*/
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    background: #005f40;
+    height: auto;
+    text-align: center;
+    color: #c4c0c0;
+}
+
+.titulo-footer {
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.info-contacto p {
+    font-size: 1.3vw;
+    margin: 5px 0;
+}
+
+
+footer{
+    font-size: 1.5vw;
+    padding: 10px;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+/*responsive*/
+
+@media (max-width: 1281px){
+    .collage{
+        height: auto;
+        width: 55%;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .navbar{
+        flex-direction: column;
+        
+
+    
+    }
+    .navbar ul{
+        margin-top: 15px;
+        
+ 
+    }
+
+    .navbar li{
+        text-align: center;
+        
+
+    }
+
+    .menu_traslado{
+        margin-top: 90px;
+    }
+    .menu_traslado ul{
+        flex-direction: column;
+        margin-right: 70px;
+    }
+
+    .menu_traslado ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_traslado ul li a{
+        font-size: 3vw;
+        padding: 5px;
+    }
+
+    #vista_general{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: auto;
+
+    }
+
+    #vista_general p{
+        font-size: 3vw;
+        text-align: center;
+        width: 80%;
+        align-self: center;
+    }
+
+    #vista_general h1{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        align-self: center;
+    }
+
+    #vista_general h2{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        align-self: center;
+    }
+
+    #vista_general ul {
+        width: 80%;
+        height: auto;
+        align-self: center;
+    }
+
+    .informacion{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center; /* Centrar imágenes */
+        overflow: hidden;
+        margin-bottom: -150px;
+    }
+
+    .collage{
+        height: 400px;
+        width: 80%;
+    }
+
+    .mapa{
+        width: 80%;
+
+    }
+    .mapa iframe{
+        width: 100%;
+        height: 300px; 
+    }
+
+    .lugares_cercanos{
+        width: auto;
+        height: auto;
+        justify-content: center;
+    }
+
+    #info_precios h1{
+        font-size: 4vw;
+        align-self: center;
+        text-align: center;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+    .lugar h3{
+        font-size: 2.2vw;
+    }
+    .lugar{
+        font-size: 2vw;
+    }
+
+    .servicios_completos {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .servicios_completos h3{
+        font-size: 3vw;
+    }
+    .servicio{
+        width: 100%;
+    }
+
+    .servicio h3{
+        font-size: 2.5vw;
+    }
+
+    #servicios h1{
+        font-size: 4vw;
+        align-self: center;
+        align-self: center;
+    }
+
+    #servicios li,span{
+        font-size: 16px;
+    }
+
+    .info-contacto p{
+        font-size: 2vw;
+    }
+
+    #normas{
+        text-align: center;
+    }
+
+    .normas_generales{
+        align-self: center;
+    }
+
+    #normas h1{
+        font-size: 4vw;
+    }
+
+    #tener_en_cuenta{
+        text-align: center;
+    }
+}

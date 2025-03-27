@@ -1,0 +1,311 @@
+/* Pagina General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #faf0e6;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    padding: 20px;
+    align-content: center;
+}
+
+
+
+
+/* Formato de todas las divisiones del contenedor */
+.grid-container > * {
+    box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+    align-content: center;
+}
+
+
+
+/* Distribucion de las divisiones del contenedor */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template:
+        "navbar" 13vh
+        "imgen" 50vh
+        "texto" 20vh
+        "imgen2" 40vh
+        "login" 70vh  
+        "contactanos" 20vh
+        "footer" 10vh;
+
+
+
+        
+    /* Barra de Navegacion */
+    .navbar {
+        grid-area: navbar;
+        position: fixed;
+        width: 97%;
+        background-color: #007369;
+        background: #007369c0;
+        backdrop-filter: blur(20px);
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center; 
+        flex-wrap: wrap;
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    .navbar h1 {
+        font-size: 35px;
+        color: #ffffff;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .navbar ul li {
+        margin: 0 15px;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        transition: color 0.3s;
+    }
+    
+    .navbar a:hover {
+        color: #02A676;
+    }
+
+
+
+
+    /* SECCION 1 */
+    /* Division para la imagen referente */
+    .imgen {
+        grid-area: imgen;
+        background-image: url(../img/termales4.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        overflow: hidden;
+        transition: transform 0.6s ease-in-out;
+    }
+    /* Division para el texto de introduccion */
+    .texto {
+        grid-area: texto;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        flex-wrap: wrap;
+        font-size: clamp(1.5rem, 5vw, 3rm);
+        overflow: hidden;
+        padding: 20px;
+    }
+
+
+
+
+    /* SECCION 2 */
+    /* Imagen mayor con texto */
+    .imgen2 {
+        grid-area: imgen2;
+        background-image: url(../img/termales4.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Texto dentro de la imagen */
+    .imgen2 {
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    /* Barra fondo */
+    .palabras {
+        color: #003840;
+        background: #00374052;
+        backdrop-filter: blur(20px);
+        width: 103%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+    /* SECCION 3 */
+    /* Login */
+    .login {
+        grid-area: login;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(../img/img1.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        padding: 0 300px;
+        color: #faf0e6;
+        font-family: "Poppins", sans-serif;
+
+
+    }
+
+    /* Texto login */
+    .log {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    /* Contenedor interno */
+    .login form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 12px;
+        gap: 5px;
+        background-color: #005f3f7c;
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        padding-bottom: 35px;
+    }
+
+    /* Recuadro para nombre */
+    .login form label {
+        align-self: center;
+        width: 120px;
+        font-family: verdana;
+        font-size: 14px;
+    }
+
+    /* Recuadro para correo */
+    .login input {
+        border-radius: 10px;
+        width: 30vh; 
+    }
+
+    /* Recuadro para comentarios */
+    .login textarea {
+        align-items: center ;
+        border-radius: 5px;
+        width: 30vh;
+        height: 10vh;
+    }
+
+    /* Boton de enviar */
+    #boton {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    /* Estilo boton */
+    .botonsubmit {
+        color: rgb(255, 255, 255);
+        border: 1px solid #fff;
+        background: #005f3f83;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .botonsubmit:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+
+
+
+    /* SECCION 3 */
+    .contactanos {
+        grid-area: contactanos;
+        margin-top: 50px;
+        width: 100%;
+        background: #005f40;
+        height: auto;
+        text-align: center;
+        color:#faf0e6;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        flex-wrap: wrap;
+        font-size: clamp(1.5rem, 5vw, 3rm);
+        overflow: hidden;
+        padding: 20px;
+    }
+    
+    .contactanos p {
+        font-size: clamp(1.5rem, 5vw, 3rm);
+        margin: 5px 0;
+
+    }
+
+    /* Pie de Pagina */
+    .footer {
+        grid-area: footer;
+        background-color: #003840;
+        color: #02A676;
+    }
+
+
+
+
+    /* Responsive */
+    @media (min-width:768px) {
+        grid-template:
+            "navbar navbar navbar" auto
+            "imgen texto" auto
+            "imgen2 imgen2" auto
+            "login login" 300px
+            "contactanos contactanos" 30px
+            "footer footer" 30px/
+            70vh 60vh;
+    }
+
+    @media (min-width:992px) {
+        grid-template:
+            "navbar navbar navbar" 80px
+            "imgen imgen texto" 800px
+            "imgen2 imgen2 imgen2" 300px
+            "login login login" 600px
+            "contactanos contactanos contactanos" auto
+            "footer footer footer" 50px/
+            70vh 30vh; 
+    }
+
+    @media (min-width:617px) {
+        .grid-container > * {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}

@@ -1,0 +1,448 @@
+
+*{
+   
+    margin: 0;
+    padding: 0;
+    font-family: "";
+
+}
+
+
+body{
+ 
+    width: 100%;
+    
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    margin: 3px;
+    
+}
+
+
+
+
+.barra {
+    width: 98%;
+    height: 20px;
+    overflow: hidden;
+    background-color: #007369;
+    background: #007369c0;
+    position: fixed;
+    z-index: 9999;
+    justify-content: space-between;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+
+    
+
+}
+
+.logo{
+
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rm);
+}
+
+.barra ul
+{
+
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-right: 20px;
+
+}
+
+
+.barra ul li{
+    margin: 0 15px;
+    color: white;
+    
+}
+
+
+li a{
+text-decoration: none;
+color:#ffffff;
+font-family: "Poppins", sans-serif;
+font-size: 20px;
+transition: color 0.3s;
+
+}
+
+li a:hover{
+    color: #14a397;
+}
+
+header{
+
+
+    width: 100%;
+    height: 60vh;
+    background-image: url(../img/760b9d29-679d-4f3d-b631-cabe209bae8e.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    display: flex;
+    backdrop-filter: blur(20px);
+
+
+
+}
+.align_input{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 35px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    width: 70vw;
+    height: 250px;
+    border-radius: 20px;
+    background: rgba(117, 160, 138, 0.548);
+    backdrop-filter: blur(20px);
+    flex-wrap: wrap;
+    
+}
+
+.align_input p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#0a302d;
+    text-align: center;
+
+}
+.busqueda
+{
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    width: 55vw;
+    height: 50px;
+    border-radius: 50px;
+    border: 1 1 15px;
+    border: solid black;
+    
+}
+.contenedor
+    {
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        border-radius: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.7);
+        background-color: rgba(226, 238, 232, 0.7);
+        padding: 3px;
+        flex-wrap: wrap;
+
+    }
+
+.presentation_title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#0a302d;
+    
+}
+
+.presentation_p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #077051;
+
+}
+
+.sesion1{
+    width: 98%;
+    height: 50vh;
+    background-color: rgba(150, 199, 191, 0.788);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    border: 2px solid #000000;
+    justify-content: center;
+    align-self: center;
+
+}
+.sugerencia
+{
+    width: 200px;
+    height: 45vh;
+    background-color: #c9c1c1;
+    border-radius: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sesion1 a, .sesion2 a, .sesion3 a{
+    text-decoration: none;
+    color: #003840;
+}
+
+.sugerencia:hover{
+
+
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.sugerencia p{
+text-align: center;
+justify-self: center;
+display: flex;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.imagen{
+width: 100%;
+height: 43%;
+background-color: gray;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+}
+
+.imagen img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+.sesion2{
+  
+    width: 98%;
+    height: 50vh;
+    background-color:  rgba(150, 199, 191, 0.788);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    border: 2px solid #000000;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.sesion3{
+    width: 98%;
+    height: 50vh;
+    background-color: rgba(150, 199, 191, 0.788);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    border: 2px solid #000000;
+    justify-content: center;
+    align-self: center;
+}
+
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    background: #005f40;
+    height: auto;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+.titulo-footer {
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.info-contacto p {
+    font-size: 1.3vw;
+    margin: 5px 0;
+}
+
+footer{
+
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    color: #92ccc7;
+}
+
+@media (max-width:1280px)
+{
+    header
+
+
+    {
+
+
+        width: 100%;
+        height: 60vh;
+       
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .barra
+    {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 100px;
+        
+    }
+    .barra ul{
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .busqueda {
+        width: 25vw;
+        margin: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .sesion1{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 5px;
+
+
+    }
+    .sesion2{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+
+    }
+    .sesion3{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+
+    }
+
+    .sugerencia{
+        width: 50vw;
+
+
+        
+    }
+    .contenedor{
+
+        width: 100vw;
+        
+    }
+
+
+    
+
+
+
+    }
+
+    @media (max-width:372px){
+
+        
+        
+        
+        
+        .align_input{
+            height: auto;
+        }
+        
+        .busqueda {
+            width: 22vw;
+            height: auto;
+
+        }
+
+        header{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    @media (max-width:384px){
+
+        
+        
+        
+        
+        .align_input{
+            height: auto;
+        }
+        
+        .busqueda {
+            width: 22vw;
+            height: auto;
+
+        }
+
+        header{
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media (max-width:388px){
+
+        
+        
+        
+        
+        .align_input{
+            height: auto;
+        }
+        
+        .busqueda {
+            width: 22vw;
+            height: auto;
+
+        }
+
+        header{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
